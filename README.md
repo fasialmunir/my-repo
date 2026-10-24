@@ -160,7 +160,7 @@ In the POST endpoint, the ID should be generated automatically, meaning the user
 
 Replace this code:
 
-```python
+ 
 if not isinstance(title, str) or not title.strip():
 
     return JSONResponse(
@@ -170,7 +170,7 @@ if not isinstance(title, str) or not title.strip():
         content={"error": "title is required and must be non-empty text"},
 
     )
-```
+
 
 with an HTTP exception.
 
